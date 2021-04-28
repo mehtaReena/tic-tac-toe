@@ -17,10 +17,10 @@ export default function Board(props) {
     let clickHandler = (index) => {
       
         console.log(count);
-        let squaresCopy = [...squares];
+       // let squaresCopy = [...squares];
          let turn=player;
                  
-        if (turn=='playerA') {
+        if (turn==='playerA') {
            
             let squareCopy = [...squares]
             if(squareCopy[index]===''){

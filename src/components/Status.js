@@ -20,7 +20,7 @@ export default  function updateStatus(squares) {
           }
         }
       
-        let isDraw = true;
+     
         for (let i = 0; i < squares.length; i++) {
           if (squares[i] === null) {
           
