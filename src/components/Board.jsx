@@ -45,23 +45,33 @@ export default function Board(props) {
 
         }
         
-        if(count===8){
+        
            let result= updateStatus(squares);
-          // console.log(result)
+           console.log(result)
+          
            if(result==='O'){
             setStatus('PlayerA win!' );
+            setSquare(new Array(9).fill(''))
 
            }
            else  if(result==='X'){
             setStatus('PlayerB win!' );
+            setSquare(new Array(9).fill(''))
 
            }
+           else  if(result==='in-Progress'){
+            setStatus('in-Progress' );       
+
+           }
+
+
            else{
             setStatus('Draw' );
+           // setSquare(new Array(9).fill(''))
            }
            
            
-        }
+        
 
 
 

@@ -1,7 +1,5 @@
 
-export default  function updateStatus(squares) {
-    
-   
+export default  function updateStatus(squares) {       
         const lines = [
           [0, 1, 2],
           [3, 4, 5],
@@ -22,9 +20,10 @@ export default  function updateStatus(squares) {
       
      
         for (let i = 0; i < squares.length; i++) {
-          if (squares[i] === null) {
-          
-            break;
+          console.log("xxxx")
+          if (squares[i] ==='' ) {
+           
+            return 'in-Progress';
           }
         }
         return 'Draw'
