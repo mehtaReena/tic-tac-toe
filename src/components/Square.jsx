@@ -1,9 +1,12 @@
-export default function Square(props){
+
+const Square = ({ value, onClick }) => {
+   const style = value ? `squares ${value}` : `squares`;
+ 
    return (
-      <button className='square'  onClick={(e)=>props.clickHandler(props.index)}>{props.value}</button>       
-       
-
-
-   )
-
-}
+     <button className={style} onClick={onClick}>
+       {value}
+     </button>
+   );
+ };
+ 
+ export default Square;
