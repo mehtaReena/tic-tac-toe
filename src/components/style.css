@@ -5,8 +5,8 @@
   }
   
   body {
-    background: #272727;
-    color: white;
+   
+    color: #272727;;
     font-family:  sans-serif;
     display: flex;
     /* align-items: center; */
@@ -18,7 +18,7 @@
   
   
   .board {
-    border: 1rem solid  #272727;
+   
   
     width: 500px;
     height: 500px;
@@ -41,13 +41,14 @@
     color: black
   }
   .O {
-    color: white
+    color: black
   }
   
   .info-wrapper {
     display: flex;
     flex-direction: column;
-    width :250px
+    width :250px;
+    gap:1rem;
   }
   
   h3 {
